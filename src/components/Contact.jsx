@@ -1,8 +1,9 @@
 import React from 'react'
 
 const Contact = () => {
+    const year = new Date().getFullYear();
   return (
-    <div name="contact" className='w-full h-full bg-gradient-to-bl from-[#cfd9df] to-[#e2ebf0] flex justify-center items-center p-8 '>
+    <div name="contact" className='w-full h-full bg-gradient-to-bl from-[#cfd9df] to-[#e2ebf0] flex flex-col justify-center items-center p-8 '>
         <form action="https://api.web3forms.com/submit" method="POST" className='flex flex-col max-w-[600px] w-full'>
             <div className='pb-4'>
                 <p className='text-4xl font-bold inline border-b-4 border-[#a18cd1] text-gray-500'>Contact</p>
@@ -14,6 +15,7 @@ const Contact = () => {
             <textarea className='bg-[#ebedee] p-2' name="message" rows="10" placeholder='Enter Your Message'></textarea>
             <button className='text-white rounded-md bg-black border-2 hover:bg-emerald-500 px-4 py-3 my-8 mx-auto flex items-center'>Submit</button>
         </form>
+        <p>&copy; PRThings {year} All Rights Reserved.</p>
     </div>
   )
 }
