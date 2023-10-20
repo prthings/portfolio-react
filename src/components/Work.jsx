@@ -4,8 +4,8 @@ import data from './data/info.json'
 
 const Work = () => {
   return (
-    <div name='work' className='w-full md:h-screen bg-lime-400'>
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+    <div name='work' className='w-full md:h-full bg-lime-400'>
+        <div className='max-w-[1000px] mx-auto p-8 flex flex-col justify-center w-full h-full'>
             <div>
             <p className='text-4xl font-bold inline border-b-4 border-[#284339]'>Work</p>
             <p className='py-6'>My Recent Works</p>
